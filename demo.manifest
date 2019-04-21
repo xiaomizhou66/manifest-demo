@@ -1,0 +1,10 @@
+CACHE MANIFEST 
+#version 1.0.8
+
+CACHE:
+image/mll.png
+
+NETWORK:
+*
+
+FALLBACK:/html5/ /404.html

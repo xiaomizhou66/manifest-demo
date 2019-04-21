@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" manifest="demo.manifest">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div>
+        <div>
+            <p>圆</p>
+            <img src="image/mll.png" alt="yuan">
+        </div>
+        <div>
+            <p>长 </p>
+            <img src="image/rrr.png" alt="chang">
+        </div>
+
+
+
+
+
+
+    </div>
+    <script type="text/javascript">
+        //缓存 js 执行
+        applicationCache.addEventListener("updateready", function () {
+            console.log('离线')
+            applicationCache.swapCache(); // 手工更新本地缓存
+            location.reload(); //重新加载页面页面
+        }, true);
+    </script>
+
+</body>
+
+</html>
