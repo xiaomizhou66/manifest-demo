@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" manifest="demo.manifest">
+<html lang="en" manifest="demo.appcache">
 
 <head>
     <meta charset="UTF-8">
@@ -11,28 +11,23 @@
 <body>
 
     <div>
+       222222222
         <div>
             <p>圆</p>
-            <img src="image/mll.png" alt="yuan">
+            <img src="image/mll.png">
         </div>
         <div>
             <p>长 </p>
-            <img src="image/rrr.png" alt="chang">
+            <img src="image/rrr.png">
         </div>
-
-
-
-
-
-
     </div>
     <script type="text/javascript">
-        //缓存 js 执行
-        applicationCache.addEventListener("updateready", function () {
-            console.log('离线')
-            applicationCache.swapCache(); // 手工更新本地缓存
-            location.reload(); //重新加载页面页面
-        }, true);
+       //缓存 js 执行
+       applicationCache.addEventListener("updateready", function () {
+           console.log('离线')
+           applicationCache.swapCache(); // 手工更新本地缓存
+           location.reload(); //重新加载页面页面，让缓存立即被更新
+       }, true);
     </script>
 
 </body>
